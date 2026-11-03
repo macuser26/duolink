@@ -1,7 +1,7 @@
 library(EBImage)
 library(imager)
 
-image_path <- "./data/image/raw/sample.jpg" #provide the path to your image
+image_path <- "/Users/dhana/Desktop/duolink/duolink.jpg" #provide the path to your image
 img <- readImage(image_path)
 
 red_channel <- img[,,1]
@@ -31,6 +31,6 @@ num_signals <- max(labels, na.rm = TRUE)
 print(paste("Number of PLA signals detected:", num_signals))
 
 #Create result directory and save the images
-output_dir <- "./data/image/results/"
+output_dir <- "/Users/dhana/Desktop/duolink/"
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)  
 writeImage(binary_img, file.path(output_dir, "binary_img.png"))
