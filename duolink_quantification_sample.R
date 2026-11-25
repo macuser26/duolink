@@ -6,7 +6,7 @@ img <- readImage(image_path)
 
 red_channel <- img[,,1]
 
-threshold_value <- 0.6  # Adjust this based on the intensity in the red channel
+threshold_value <- 0.4  # Adjust this based on the intensity in the red channel
 
 binary_img <- red_channel > threshold_value  
 
@@ -33,5 +33,5 @@ print(paste("Number of PLA signals detected:", num_signals))
 #Create result directory and save the images
 output_dir <- "/Users/dhana/Desktop/duolink/"
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)  
-writeImage(binary_img, file.path(output_dir, "binary_img.png"))
+writeImage(binary_img, file.path(output_dir, "binary_img_0.6.png"))
 
