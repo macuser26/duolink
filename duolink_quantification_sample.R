@@ -6,7 +6,7 @@ img <- readImage(image_path)
 
 red_channel <- img[,,1]
 
-threshold_value <- 0.6  # Adjust this based on the intensity in the red channel
+threshold_value <- 0.4  # Adjust this based on the intensity in the red channel
 
 binary_img <- red_channel > threshold_value  
 
