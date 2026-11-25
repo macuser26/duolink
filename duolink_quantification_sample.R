@@ -33,5 +33,5 @@ print(paste("Number of PLA signals detected:", num_signals))
 #Create result directory and save the images
 output_dir <- "/Users/dhana/Desktop/duolink/"
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)  
-writeImage(binary_img, file.path(output_dir, "binary_img_0.6.png"))
+writeImage(binary_img, file.path(output_dir, "binary_img_0.4.png"))
 
